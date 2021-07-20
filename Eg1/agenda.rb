@@ -16,7 +16,8 @@ loop do
   puts '2- Atualizar'
   puts '3- Exibir'
   puts '4- Excluir'
-  puts '5- Sair'
+  puts '5- Limpar tela'
+  puts '6- Sair'
 
   print 'Escolha uma opção: '
   escolha = gets.chomp
@@ -69,8 +70,9 @@ loop do
     else
       puts 'Opção inválida!'
     end
-
   when '5'
+    system('clear')
+  when '6'
     puts 'Saindo...'
     exit
   end
